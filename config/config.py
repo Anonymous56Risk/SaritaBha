@@ -7,12 +7,12 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "11432951")
+API_HASH = getenv("API_HASH", "0ab3453b7ee728f42bdd44d6954121a0")
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("5603050690:AAHGN1Aw-vitChlVUSTjryyBss8k4eCXlwI")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Badguys:jha989898@cluster0.r427pby.mongodb.net/?retryWrites=true&w=majority")
 
 DURATION_LIMIT_MIN = int(
     getenv("DURATION_LIMIT", "180")
@@ -22,30 +22,30 @@ SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
 )
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-846088968")
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "(っ◔◡◔)っ ♥ Sarita Bhabhi ♥")
 
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "1356469075").split())
+    map(int, getenv("OWNER_ID", "5404761904").split())
 )
 
-HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
+HEROKU_API_KEY = getenv("HEROKU_API_KEY"))
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TheAnonymous2005/AnonXMusic",
+    "https://github.com/Anonymous56Risk/SaritaBhabi",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
-GIT_TOKEN = getenv("GIT_TOKEN", None)
+GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/AnonAssociation")
+    "SUPPORT_CHANNEL", "https://t.me/DP_NeTwork_op")
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/DevilsHeavenMF")
+    "SUPPORT_GROUP", "https://t.me/Savita_Bhabhiiii_1")
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 
@@ -83,7 +83,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 )
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "AQC6fEM8nPEA1GKmo_NnbxqwIA032g3W9uJGuS8zI9IqZCNLfzrx9XDPwDqbGsnlnNsOLIiiYMXZ3b2E8MQNIstN2puexNm8LeQSP64sf-w9vgZfQsia--2qv4iK9HsD9GX7mMe3T5y4BmNr3gST9gaa0j08P0pw8iANerlfLBOhzEyuCfIBk9Nw0OFc2OWjZ_I9u5JjLB-B3GxSS1QYqe2huZIAVXOnnJtZ8Ta7dmS8TUzIWlyQM-7LUH1VjVRigcAO5hU_Cj-XNRgvziRZDJwyfyyjErDyWe24BiqPkrw7TgIIe9GZLPht5C7yGAP4xiCUHRfaqk1SmqWcJFeHGs0YAAAAAVXgRhQA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -101,11 +101,11 @@ clean = {}
 
 autoclean = []
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/56d1760224589ee370186.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/febc7e455da9230fbfa3b.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/56d1760224589ee370186.jpg",
+    "https://te.legra.ph/file/73e258165b2863f4db691.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
@@ -145,7 +145,7 @@ SOUNCLOUD_IMG_URL = getenv(
 
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
-    "https://te.legra.ph/file/56d1760224589ee370186.jpg",
+    "https://te.legra.ph/file/4647bf74dadeb8ba49c80.jpg",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
@@ -196,7 +196,7 @@ if PING_IMG_URL:
 
 if PLAYLIST_IMG_URL:
     if PLAYLIST_IMG_URL != "assets/Playlist.jpeg":
-        if not re.match("(?:http|https)://", PLAYLIST_IMG_URL):
+        if not re.match("(?:http|https)://", "https://te.legra.ph/file/9b5f6c4caaac8855c0e1c.jpg"):
             print(
                 "[ERROR] - Your PLAYLIST_IMG_URL url is wrong. Please ensure that it starts with https://"
             )
